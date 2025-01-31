@@ -107,6 +107,15 @@ button:hover {
     z-index: 1;
 }
 
+.lotr-gif {
+    width: 250px;  /* Adjust size of the GIF */
+    height: auto;  /* Maintain aspect ratio */
+    position: fixed;  /* Fixed in the top-left corner */
+    top: 100px;  /* 10px from the top */
+    right: 150px;  /* 10px from the left */
+    z-index: 1;
+}
+
 
 
 

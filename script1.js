@@ -4,22 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const emojis = document.querySelectorAll('.emoji');
 
     emojis.forEach(emoji => {
-        // Randomize the position
-        const startX = Math.random() * window.innerWidth;  // Random x position
-        const startY = Math.random() * window.innerHeight; // Random y position
+        // Randomize starting position
+        const startX = Math.random() * window.innerWidth;
+        const startY = Math.random() * window.innerHeight;
         emoji.style.left = `${startX}px`;
         emoji.style.top = `${startY}px`;
 
-        // Randomize animation duration and direction
+        // Randomize animation duration
         const duration = Math.random() * 4 + 3;  // Random duration between 3 and 7 seconds
         emoji.style.animationDuration = `${duration}s`;
 
-        // Randomize the direction of the animation
+        // Randomize direction of animation
         const direction = Math.random() > 0.5 ? 1 : -1;
         emoji.style.animationTimingFunction = direction === 1 ? "ease-in-out" : "ease-out";
 
-        // To make it feel more random and bouncy
-        const delay = Math.random() * 5; // Random animation delay
+        // Random delay for animations
+        const delay = Math.random() * 5;
         emoji.style.animationDelay = `${delay}s`;
     });
 

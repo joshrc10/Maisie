@@ -17,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Randomize animation delay (from 0s to 3s)
         const delay = Math.random() * 3;
         emoji.style.animationDelay = `${delay}s`;
-
-        // Optionally, we could also randomize the direction of movement
-        // (This part is optional but will make the movement feel more random)
+        
         const direction = Math.random() > 0.5 ? 1 : -1;
         emoji.style.animationTimingFunction = direction === 1 ? "ease-in-out" : "ease-out";
     });

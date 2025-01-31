@@ -97,12 +97,11 @@ button:hover {
 }
 
 .my-gif {
-    width: 100px;  /* Resize only this GIF */
+    width: 80px;  /* Adjust size of the GIF */
     height: auto;  /* Maintain aspect ratio */
-    position: absolute;  /* Position it on the page */
-    top: 0px;
-    left: 0%;
-    transform: translateX(-50%);  /* Center it horizontally */
+    position: fixed;  /* Fixed in the top-left corner */
+    top: 10px;  /* 10px from the top */
+    left: 10px;  /* 10px from the left */
 }
 
 

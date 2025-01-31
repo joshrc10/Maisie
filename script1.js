@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const noButton = document.getElementById("no");
     const yesButton = document.getElementById("yes");
+    const emojis = document.querySelectorAll('.emoji');
 
     emojis.forEach(emoji => {
         // Randomize the position

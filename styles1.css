@@ -111,8 +111,8 @@ button:hover {
     width: 250px;  /* Adjust size of the GIF */
     height: auto;  /* Maintain aspect ratio */
     position: fixed;  /* Fixed in the top-left corner */
-    top: 80px;  /* 10px from the top */
-    right: 100px;  /* 10px from the left */
+    top: 70px;  /* 10px from the top */
+    right: 150px;  /* 10px from the left */
     z-index: 1;
 }
 
@@ -121,7 +121,7 @@ button:hover {
     height: auto;  /* Maintain aspect ratio */
     position: fixed;  /* Fixed in the top-left corner */
     bottom: 100px;  /* 10px from the top */
-    right: 100px;  /* 10px from the left */
+    right: 150px;  /* 10px from the left */
     z-index: 1;
 }
 .jones-gif {

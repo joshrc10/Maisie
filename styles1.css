@@ -19,15 +19,6 @@ body {
     animation: bounce 6s linear infinite;  /* Infinite bounce animation */
 }
 
-.my-gif {
-    width: 100px;  /* Resize only this GIF */
-    height: auto;  /* Maintain aspect ratio */
-    position: absolute;  /* Position it on the page */
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);  /* Center it horizontally */
-}
-
 /* Keyframes for random bouncing animation */
 @keyframes bounce {
     0% {
@@ -100,6 +91,20 @@ button:hover {
 
 /* Fade-in Animation */
 @keyframes fadeIn {
+
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.my-gif {
+    width: 100px;  /* Resize only this GIF */
+    height: auto;  /* Maintain aspect ratio */
+    position: absolute;  /* Position it on the page */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);  /* Center it horizontally */
+}
+
+
+
+

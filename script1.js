@@ -18,8 +18,31 @@ document.addEventListener("DOMContentLoaded", () => {
         const delay = Math.random() * 3;
         emoji.style.animationDelay = `${delay}s`;
         
-        const direction = Math.random() > 0.5 ? 1 : -1;
-        emoji.style.animationTimingFunction = direction === 1 ? "ease-in-out" : "ease-out";
+        const directionX = Math.random() > 0.5 ? 1 : -1; // Random left/right movement
+        const directionY = Math.random() > 0.5 ? 1 : -1; // Random up/down movement
+
+        // Randomize the keyframes for this emoji
+        const keyframes = `
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(${100 * directionX}px, ${100 * directionY}px); }
+            50% { transform: translate(${200 * directionX}px, ${200 * directionY}px); }
+            75% { transform: translate(${300 * directionX}px, ${300 * directionY}px); }
+            100% { transform: translate(0, 0); }
+        `;
+
+        // Create a new style for this emoji's keyframes dynamically
+        const styleSheet = document.styleSheets[0];
+        const keyframeName = `emojiAnimation-${Math.random().toString(36).substr(2, 9)}`;
+        
+        // Insert the randomized keyframes
+        styleSheet.insertRule(`
+            @keyframes ${keyframeName} {
+                ${keyframes}
+            }
+        `, styleSheet.cssRules.length);
+
+        // Apply the new animation to the emoji
+        emoji.style.animationName = keyframeName;
     });
 
     // Moving "No" Button

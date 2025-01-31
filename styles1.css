@@ -100,8 +100,8 @@ button:hover {
     width: 100px;  /* Resize only this GIF */
     height: auto;  /* Maintain aspect ratio */
     position: absolute;  /* Position it on the page */
-    top: 20px;
-    left: 50%;
+    top: 0px;
+    left: 0%;
     transform: translateX(-50%);  /* Center it horizontally */
 }
 

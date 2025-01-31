@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         // Play a sweet sound (Optional)
-        const audio = new Audio('08. Get Lucky (Feat. Pharrell Williams).mp3'); // Cute chime sound
+        const audio = new Audio('get_lucky.mp3'); // Cute chime sound
         audio.play();
     });
 });

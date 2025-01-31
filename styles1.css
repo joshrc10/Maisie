@@ -20,7 +20,7 @@ body {
 }
 
 .my-gif {
-    width: 200px;  /* Resize only this GIF */
+    width: 100px;  /* Resize only this GIF */
     height: auto;  /* Maintain aspect ratio */
     position: absolute;  /* Position it on the page */
     top: 20px;

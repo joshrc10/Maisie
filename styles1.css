@@ -129,7 +129,7 @@ button:hover {
     height: auto;  /* Maintain aspect ratio */
     position: fixed;  /* Fixed in the top-left corner */
     bottom: 100px;  /* 10px from the top */
-    left: 100px;  /* 10px from the left */
+    left: 150px;  /* 10px from the left */
     z-index: 1;
 }
 

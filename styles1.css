@@ -100,8 +100,8 @@ button:hover {
     width: 200px;  /* Adjust size of the GIF */
     height: auto;  /* Maintain aspect ratio */
     position: fixed;  /* Fixed in the top-left corner */
-    top: 150px;  /* 10px from the top */
-    left: 150px;  /* 10px from the left */
+    top: 300px;  /* 10px from the top */
+    left: 300px;  /* 10px from the left */
 }
 
 

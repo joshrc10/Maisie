@@ -116,6 +116,15 @@ button:hover {
     z-index: 1;
 }
 
+.romcom-gif {
+    width: 270px;  /* Adjust size of the GIF */
+    height: auto;  /* Maintain aspect ratio */
+    position: fixed;  /* Fixed in the top-left corner */
+    bottom: 100px;  /* 10px from the top */
+    right: 100px;  /* 10px from the left */
+    z-index: 1;
+}
+
 
 
 

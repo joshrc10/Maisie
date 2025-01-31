@@ -14,30 +14,28 @@ body {
 
 .emoji {
     position: absolute;
-    font-size: 30px;  /* Set the size of the emoji */
-    pointer-events: none;  /* Prevent emojis from interfering with clicks */
-    animation: bounce 5s ease-in-out infinite;
+    font-size: 30px;
+    pointer-events: none;  /* Prevent interaction with emojis */
 }
 
-/* Bounce animation to make the emojis move around */
+/* Bounce animation */
 @keyframes bounce {
     0% {
-        transform: translate(0, 0);  /* Start position */
+        transform: translate(0, 0);
     }
     25% {
-        transform: translate(100px, 100px);  /* Move diagonally */
+        transform: translate(100px, 100px);
     }
     50% {
-        transform: translate(-100px, -100px);  /* Move in opposite direction */
+        transform: translate(-100px, -100px);
     }
     75% {
-        transform: translate(200px, 200px);  /* Move diagonally again */
+        transform: translate(200px, 200px);
     }
     100% {
-        transform: translate(0, 0);  /* End position */
+        transform: translate(0, 0);
     }
 }
-
 
 /* Card Container */
 .container {

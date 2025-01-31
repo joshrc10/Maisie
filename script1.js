@@ -4,23 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const emojis = document.querySelectorAll('.emoji');
 
     emojis.forEach(emoji => {
-        // Randomize starting position
+        // Randomize the initial position on the screen
         const startX = Math.random() * window.innerWidth;
         const startY = Math.random() * window.innerHeight;
         emoji.style.left = `${startX}px`;
         emoji.style.top = `${startY}px`;
 
-        // Randomize animation duration
-        const duration = Math.random() * 4 + 3;  // Random duration between 3 and 7 seconds
+        // Randomize animation duration between 4s and 10s
+        const duration = Math.random() * 6 + 4;  // Duration between 4 and 10 seconds
         emoji.style.animationDuration = `${duration}s`;
 
-        // Randomize direction of animation
+        // Randomize animation delay (from 0s to 3s)
+        const delay = Math.random() * 3;
+        emoji.style.animationDelay = `${delay}s`;
+
+        // Optionally, we could also randomize the direction of movement
+        // (This part is optional but will make the movement feel more random)
         const direction = Math.random() > 0.5 ? 1 : -1;
         emoji.style.animationTimingFunction = direction === 1 ? "ease-in-out" : "ease-out";
-
-        // Random delay for animations
-        const delay = Math.random() * 5;
-        emoji.style.animationDelay = `${delay}s`;
     });
 
     // Moving "No" Button

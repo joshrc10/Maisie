@@ -16,9 +16,10 @@ body {
     position: absolute;
     font-size: 30px;
     pointer-events: none;  /* Prevent interaction with emojis */
+    animation: bounce 6s linear infinite;  /* Infinite bounce animation */
 }
 
-/* Bounce animation */
+/* Keyframes for random bouncing animation */
 @keyframes bounce {
     0% {
         transform: translate(0, 0);

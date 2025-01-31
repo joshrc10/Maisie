@@ -20,8 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.addEventListener("click", () => {
+                const audio = new Audio('get_lucky.mp3');
+                audio.play().catch(error => console.log("Autoplay blocked: ", error));
+            }, { once: true });  // Ensures it only plays once on first click
+        });
         // Play a sweet sound (Optional)
-        const audio = new Audio('get_lucky.mp3'); // Cute chime sound
-        audio.play();
+        // const audio = new Audio('get_lucky.mp3'); // Cute chime sound
+        // audio.play();
     });
 });

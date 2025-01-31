@@ -2,6 +2,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const noButton = document.getElementById("no");
     const yesButton = document.getElementById("yes");
 
+    emojis.forEach(emoji => {
+        // Randomize the position
+        const startX = Math.random() * window.innerWidth;  // Random x position
+        const startY = Math.random() * window.innerHeight; // Random y position
+        emoji.style.left = `${startX}px`;
+        emoji.style.top = `${startY}px`;
+
+        // Randomize animation duration and direction
+        const duration = Math.random() * 4 + 3;  // Random duration between 3 and 7 seconds
+        emoji.style.animationDuration = `${duration}s`;
+
+        // Randomize the direction of the animation
+        const direction = Math.random() > 0.5 ? 1 : -1;
+        emoji.style.animationTimingFunction = direction === 1 ? "ease-in-out" : "ease-out";
+
+        // To make it feel more random and bouncy
+        const delay = Math.random() * 5; // Random animation delay
+        emoji.style.animationDelay = `${delay}s`;
+    });
+
     // Moving "No" Button
     noButton.addEventListener("mouseover", () => {
         const x = Math.random() * (window.innerWidth - noButton.clientWidth);

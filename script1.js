@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="container">
                 <h2 class="question">Never in any doubt 🎉</h2>
                 <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGs1Z2J4MWlyanR0a3BwdHQyZ3o4ZGZybmk0NWltOHhnZGcxY2YyYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AcfTF7tyikWyroP0x7/giphy.gif" alt="Happy Love" style="width: 100%; border-radius: 15px;">
+                <a href="ticket.html" class="fancy-button">⬅ Your Ticket 🎫</a>
                 <a href="index.html" class="fancy-button">⬅ Back to Home</a>
             </div>
         `;
